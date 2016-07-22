@@ -8,7 +8,7 @@
 
 'use strict';
 
-var React = require('react-native');
+import React from 'react-native';
 var Dimensions = React.Dimensions;
 
 var deviceWidth = Dimensions.get('window').width;
@@ -257,4 +257,4 @@ var SlidingUpPanel = React.createClass({
 
 });
 
-module.exports = SlidingUpPanel;
+export default SlidingUpPanel;
