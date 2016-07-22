@@ -8,21 +8,21 @@
 
 'use strict';
 
-import React from 'react-native';
-var Dimensions = React.Dimensions;
+import React from 'react';
+import Dimensions from 'Dimensions';
 
 var deviceWidth = Dimensions.get('window').width;
 var deviceHeight = Dimensions.get('window').height;
 
 var BASE_CONTAINER_HEIGHT = 40;
 
-var {
+import {
   AppRegistry,
   Text,
   View,
   PanResponder,
   Image
-} = React;
+} from 'react-native';
 
 var SlidingUpPanel = React.createClass({
 
