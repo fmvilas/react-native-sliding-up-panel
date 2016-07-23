@@ -38,6 +38,7 @@ var SlidingUpPanel = React.createClass({
       containerHalfHeight : 0,
       containerBackgroundColor : this.props.containerBackgroundColor,
       containerOpacity : this.props.containerOpacity,
+      elevation : this.props.elevation,
 
       handlerView : this.props.handlerDefaultView,
 
@@ -129,7 +130,8 @@ var SlidingUpPanel = React.createClass({
           opacity: this.state.containerOpacity,
           height: this.state.containerHeight,
           paddingBottom: this.state.leastContainerHeight,
-          backgroundColor : this.state.containerBackgroundColor
+          backgroundColor : this.state.containerBackgroundColor,
+          elevation: this.state.elevation
         }}>
         <View
           style = {{
